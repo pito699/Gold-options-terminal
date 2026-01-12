@@ -57,6 +57,12 @@
             font-weight: 900;
             color: var(--gold);
             letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
         }
 
         .logo span {
@@ -90,6 +96,8 @@
             border-radius: 8px;
             font-weight: 700;
             transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
         }
 
         .btn-github:hover {
@@ -327,16 +335,15 @@
             box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15);
         }
 
-        .screenshot-placeholder {
+        .screenshot-image {
             width: 100%;
-            aspect-ratio: 16/9;
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-dim);
-            font-size: 3rem;
-            border-bottom: 1px solid var(--border);
+            height: auto;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .screenshot-box:hover .screenshot-image {
+            transform: scale(1.05);
         }
 
         .screenshot-label {
@@ -347,6 +354,7 @@
             font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            background: rgba(0, 0, 0, 0.3);
         }
 
         /* ABOUT SECTION */
@@ -397,6 +405,12 @@
             margin-bottom: 60px;
         }
 
+        .access-section h2 {
+            color: var(--gold);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
         .access-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -410,6 +424,13 @@
             border-radius: 8px;
             padding: 25px;
             text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .access-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
         }
 
         .access-icon {
@@ -429,6 +450,10 @@
             font-size: 0.95rem;
         }
 
+        .access-desc p {
+            margin-bottom: 8px;
+        }
+
         /* TECH SECTION */
         .tech-grid {
             display: grid;
@@ -445,6 +470,12 @@
             color: var(--gold);
             font-weight: 700;
             font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .tech-badge:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateY(-3px);
         }
 
         /* FOOTER */
@@ -466,6 +497,7 @@
             gap: 20px;
             justify-content: center;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
 
         .social-links a {
@@ -473,10 +505,14 @@
             text-decoration: none;
             font-weight: 700;
             transition: all 0.3s ease;
+            padding: 10px 16px;
+            border: 1px solid var(--gold);
+            border-radius: 6px;
         }
 
         .social-links a:hover {
-            transform: scale(1.1);
+            background: rgba(255, 215, 0, 0.1);
+            transform: scale(1.05);
         }
 
         /* ANIMATIONS */
@@ -539,13 +575,21 @@
             .btn {
                 width: 100%;
             }
+
+            .social-links {
+                flex-direction: column;
+            }
+
+            .social-links a {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <div class="logo">
+        <div class="logo" onclick="scrollToTop()">
             <span>⚡</span>Gold Options Pro v2
         </div>
         <nav>
@@ -567,7 +611,7 @@
             <p style="color: var(--gold); font-weight: 700;">Институциональный уровень аналитики. Бесплатная альтернатива Bloomberg Terminal</p>
             
             <div class="hero-buttons">
-                <a href="#app" class="btn btn-primary">🚀 Запустить Приложение</a>
+                <a href="https://gold-options-pro.netlify.app/" class="btn btn-primary" target="_blank">🚀 Запустить Приложение</a>
                 <a href="#about" class="btn btn-secondary">📖 Узнать Больше</a>
             </div>
         </section>
@@ -732,86 +776,96 @@
             
             <div class="screenshots-grid">
                 <div class="screenshot-box">
-                    <div class="screenshot-placeholder">📌</div>
-                    <div class="screenshot-label">Terminal Main View</div>
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-47-05.png" alt="Terminal Main View" class="screenshot-image">
+                    <div class="screenshot-label">📌 Главный Вид Терминала</div>
                 </div>
 
                 <div class="screenshot-box">
-                    <div class="screenshot-placeholder">📊</div>
-                    <div class="screenshot-label">OI Heatmap</div>
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-47-26.png" alt="OI Distribution" class="screenshot-image">
+                    <div class="screenshot-label">📊 Распределение OI</div>
                 </div>
 
                 <div class="screenshot-box">
-                    <div class="screenshot-placeholder">⚡</div>
-                    <div class="screenshot-label">GEX Analysis</div>
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-47-50.png" alt="Max Pain Analysis" class="screenshot-image">
+                    <div class="screenshot-label">📍 Анализ Max Pain</div>
                 </div>
 
                 <div class="screenshot-box">
-                    <div class="screenshot-placeholder">🌊</div>
-                    <div class="screenshot-label">IV Smile Curve</div>
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-48-16.png" alt="GEX Profile" class="screenshot-image">
+                    <div class="screenshot-label">⚡ GEX Профиль</div>
                 </div>
 
                 <div class="screenshot-box">
-                    <div class="screenshot-placeholder">🎯</div>
-                    <div class="screenshot-label">Max Pain Levels</div>
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-48-35.png" alt="IV Smile" class="screenshot-image">
+                    <div class="screenshot-label">🌊 IV Улыбка</div>
                 </div>
 
                 <div class="screenshot-box">
-                    <div class="screenshot-placeholder">📈</div>
-                    <div class="screenshot-label">Gamma Exposure</div>
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-48-55.png" alt="Gamma Exposure" class="screenshot-image">
+                    <div class="screenshot-label">🔥 Гамма Экспозиция</div>
                 </div>
 
                 <div class="screenshot-box">
-                    <div class="screenshot-placeholder">⚙️</div>
-                    <div class="screenshot-label">Delta Profile</div>
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-49-20.png" alt="Zero Gamma Points" class="screenshot-image">
+                    <div class="screenshot-label">🎯 Нулевая Гамма</div>
                 </div>
 
                 <div class="screenshot-box">
-                    <div class="screenshot-placeholder">🔄</div>
-                    <div class="screenshot-label">Theta Decay</div>
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-49-47.png" alt="Volume Heatmap" class="screenshot-image">
+                    <div class="screenshot-label">📈 Объемы</div>
                 </div>
+
+                <div class="screenshot-box">
+                    <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-50-13.png" alt="Advanced Analytics" class="screenshot-image">
+                <div class="screenshot-label">🔬 Продвинутая Аналитика</div>
+                </div>
+                <div class="screenshot-box">
+                <img src="https://github.com/Askhat707/Gold-options-terminal/raw/main/2026-01-12_10-50-30.png" alt="Export Options" class="screenshot-image">
+                <div class="screenshot-label">📤 Экспорт Данных</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- ABOUT SECTION -->
-        <section id="about" class="about-section">
-            <h3>📖 О Проекте</h3>
-            
-            <p>
-                <strong>Gold Options Pro v2</strong> — это профессиональный терминал для анализа опционных уровней по золоту (Gold / XAUUSD) с данными напрямую из CME Group.
-            </p>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <h3>📖 О Проекте</h3>
+        
+        <p>
+            <strong>Gold Options Pro v2</strong> — это профессиональный терминал для анализа опционных уровней по золоту (Gold / XAUUSD) с данными напрямую из CME Group.
+        </p>
 
-            <p>
-                Терминал агрегирует real-time данные с CME Group для визуализации настроений рынка. Используется институциональными трейдерами и аналитиками для принятия торговых решений.
-            </p>
+        <p>
+            Терминал агрегирует real-time данные с CME Group для визуализации настроений рынка. Используется институциональными трейдерами и аналитиками для принятия торговых решений.
+        </p>
 
-            <div class="about-grid">
-                <div class="about-item">
-                    <div class="about-item-title">💎 Для Трейдеров</div>
-                    <p style="color: var(--text-dim);">Получайте профессиональные сигналы от больших денег. Анализируйте позиции маркет-мейкеров и изменяйте свои стратегии в реальном времени.</p>
-                </div>
-
-                <div class="about-item">
-                    <div class="about-item-title">🛠️ Для Разработчиков</div>
-                    <p style="color: var(--text-dim);">Clean code на Vanilla JS. Firebase backend. Open to contributions. Легко расширяется и модифицируется.</p>
-                </div>
-
-                <div class="about-item">
-                    <div class="about-item-title">📊 Данные</div>
-                    <p style="color: var(--text-dim);">Real-time агрегация с CME Group. 175+ страйков анализа. История цен и OI за несколько месяцев.</p>
-                </div>
+        <div class="about-grid">
+            <div class="about-item">
+                <div class="about-item-title">💎 Для Трейдеров</div>
+                <p style="color: var(--text-dim);">Получайте профессиональные сигналы от больших денег. Анализируйте позиции маркет-мейкеров и изменяйте свои стратегии в реальном времени.</p>
             </div>
-        </section>
-         <!-- ACCESS SECTION -->
+
+            <div class="about-item">
+                <div class="about-item-title">🛠️ Для Разработчиков</div>
+                <p style="color: var(--text-dim);">Clean code на Vanilla JS. Firebase backend. Open to contributions. Легко расширяется и модифицируется.</p>
+            </div>
+
+            <div class="about-item">
+                <div class="about-item-title">📊 Данные</div>
+                <p style="color: var(--text-dim);">Real-time агрегация с CME Group. 175+ страйков анализа. История цен и OI за несколько месяцев.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESS SECTION -->
     <section id="access" class="access-section">
-        <h2 style="color: var(--gold); font-size: 1.8rem; margin-bottom: 30px;">💎 Доступ к Платформе</h2>
+        <h2>💎 Доступ к Платформе</h2>
         
         <div class="access-grid">
             <div class="access-card">
                 <div class="access-icon">🎁</div>
                 <div class="access-title">Trial Plan</div>
                 <div class="access-desc">
-                    <p style="margin-bottom: 10px;">3 дня бесплатного доступа</p>
+                    <p>3 дня бесплатного доступа</p>
                     <p style="font-size: 0.85rem; color: #888;">✅ Все функции включены<br>✅ Полный доступ к графикам<br>✅ MT5 экспорт</p>
                 </div>
             </div>
@@ -820,7 +874,7 @@
                 <div class="access-icon">👑</div>
                 <div class="access-title">Premium Plan</div>
                 <div class="access-desc">
-                    <p style="margin-bottom: 10px;">Неограниченный доступ</p>
+                    <p>Неограниченный доступ</p>
                     <p style="font-size: 0.85rem; color: #888;">✅ История за 3+ месяца<br>✅ Все 175 страйков<br>✅ GEX-профили<br>✅ Приоритет поддержки</p>
                 </div>
             </div>
@@ -829,14 +883,14 @@
                 <div class="access-icon">🏢</div>
                 <div class="access-title">Enterprise</div>
                 <div class="access-desc">
-                    <p style="margin-bottom: 10px;">Для компаний и фондов</p>
+                    <p>Для компаний и фондов</p>
                     <p style="font-size: 0.85rem; color: #888;">✅ Custom интеграции<br>✅ API доступ<br>✅ Dedicated support<br>✅ White Label</p>
                 </div>
             </div>
         </div>
 
         <div style="text-align: center; margin-top: 40px;">
-            <a href="#app" class="btn btn-primary">🚀 Начать Бесплатно</a>
+            <a href="https://gold-options-pro.netlify.app/" class="btn btn-primary" target="_blank">🚀 Начать Бесплатно</a>
         </div>
     </section>
 
@@ -867,9 +921,9 @@
         </p>
         
         <div class="hero-buttons">
-            <a href="#app" class="btn btn-primary">🚀 Запустить Приложение</a>
+            <a href="https://gold-options-pro.netlify.app/" class="btn btn-primary" target="_blank">🚀 Запустить Приложение</a>
             <a href="https://github.com/Askhat707/Gold-options-terminal" class="btn btn-secondary" target="_blank">⭐ GitHub Repository</a>
-            <a href="https://t.me/ASKHAT_1985" class="btn btn-secondary" target="_blank">📱 Telegram</a>
+            <a href="https://t.me/+-tmtq_FUl2NhMjVi" class="btn btn-secondary" target="_blank">📱 Telegram</a>
         </div>
     </section>
 </div>
@@ -880,8 +934,10 @@
     <p style="font-size: 0.9rem;">Данные поступают с CME Group • Реальное время • Профессиональный уровень анализа</p>
     
     <div class="social-links">
-        <a href="https://github.com/Askhat707/Gold-options-terminal" target="_blank">GitHub</a>
-        <a href="https://t.me/ASKHAT_1985" target="_blank">Telegram</a>
+        <a href="https://github.com/Askhat707/Gold-options-terminal" target="_blank">💻 GitHub</a>
+        <a href="https://t.me/+-tmtq_FUl2NhMjVi" target="_blank">📱 Telegram</a>
+        <a href="https://www.youtube.com/@TradeGoldOptions" target="_blank">📺 YouTube</a>
+        <a href="mailto:omaralinovaskar95@gmail.com" target="_blank">📧 Email</a>
     </div>
 
     <p style="margin-top: 20px; font-size: 0.8rem; color: #666;">
@@ -890,6 +946,14 @@
 </footer>
 
 <script>
+    // Функция для скролла в начало страницы
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     // Простая анимация элементов при скролле
     const observerOptions = {
         threshold: 0.1,
@@ -905,23 +969,41 @@
         });
     }, observerOptions);
 
-    document.querySelectorAll('.feature-card, .screenshot-box, .access-card').forEach(el => {
+    document.querySelectorAll('.feature-card, .screenshot-box, .access-card, .tech-badge').forEach(el => {
         observer.observe(el);
     });
 
-    // Smooth scroll
+    // Smooth scroll для навигации
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-            if (href !== '#app') {
+            if (href !== '#' && !href.includes('app')) {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
+                    target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             }
         });
     });
+
+    // Добавляем поддержку загрузки изображений с ошибкой
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('error', function() {
+            this.style.display = 'none';
+            this.parentElement.style.minHeight = '200px';
+        });
+    });
+
+    // Предотвращение клика на кнопку GitHub в header
+    document.querySelector('.btn-github').addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+
+    console.log('🚀 Gold Options Pro v2 - Loaded Successfully');
 </script>
 </body>
 </html>
